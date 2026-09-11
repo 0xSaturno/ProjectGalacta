@@ -25,7 +25,7 @@ No game files are modified on disk; mods are mounted at runtime after login.
 1. Download the latest mod and companion app from [Releases](https://github.com/0xSaturno/ProjectGalacta/releases/latest).
 2. Extract the ProjectGalacta mod container (`.pak, .ucas, .utoc`) into your game's Paks folder.
 3. Run the Companion App and scan your game for compatible mods.
-4. Launch the game and log in. Mods are mounted after login, then press F9 in a match to open the swapper.
+4. Launch the game and log in. Mods are mounted after login, then press **P** in a match to open the swapper.
 
 ## Safety & Fair Use
 
