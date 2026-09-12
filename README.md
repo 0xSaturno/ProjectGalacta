@@ -27,6 +27,10 @@ No game files are modified on disk; mods are mounted at runtime after login.
 3. Run the Companion App and scan your game for compatible mods.
 4. Launch the game and log in. Mods are mounted after login, then press **P** in a match to open the swapper.
 
+## Documentation
+
+For in-depth guides, technical breakdowns, and FAQ, see the [Project Galacta website](https://0xsaturno.github.io/ProjectGalacta/).
+
 ## Safety & Fair Use
 
 - Client-side visuals only. No gameplay logic, hitboxes, or competitive advantage.
