@@ -26,5 +26,6 @@ jobs:
       - uses: withastro/action@v3
         with:
           path: ./Website
+          node-version: 22
       - uses: actions/deploy-pages@v4
         id: deployment
