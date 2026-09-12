@@ -16,8 +16,8 @@ No game files are modified on disk; mods are mounted at runtime after login.
 
 ## Requirements
 
-- Windows 10/11 and [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (to run the Companion App)
 - [Rivals SIG Bypasser](https://www.nexusmods.com/marvelrivals/mods/2940) to load the Project Galacta mod
+- For the Companion App: Windows 10/11 and [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 ## Installation
 
