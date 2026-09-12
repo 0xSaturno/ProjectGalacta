@@ -9,6 +9,7 @@ No game files are modified on disk; mods are mounted at runtime after login.
 
 ## Features
 
+- Mod Loader — native blueprint mounting for any mod packages, with robust anti-cheat/security checks.
 - In-game Skin Swapper — browse and apply installed mesh mods per hero, with a live preview grid.
 - Persistent preferences — skin and morph choices saved per hero/costume.
 - Morph target sliders — adjust shape keys live for meshes that ship them.
