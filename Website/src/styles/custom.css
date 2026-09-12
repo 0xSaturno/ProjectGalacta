@@ -1,0 +1,47 @@
+/* Brand accent: Project Galacta gold */
+:root {
+	--sl-color-accent-low: color-mix(in srgb, #f4d12b 30%, black);
+	--sl-color-accent: color-mix(in srgb, #f4d12b 80%, black);
+	--sl-color-accent-high: #f4d12b;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: color-mix(in srgb, #f4d12b 12%, white);
+	--sl-color-accent: color-mix(in srgb, #f4d12b 65%, black);
+	--sl-color-accent-high: color-mix(in srgb, #f4d12b 50%, black);
+}
+
+/* Narrower "On this page" panel. It shares --sl-sidebar-width with the left
+   nav by default, so override its containers directly instead. Not wrapped
+   in @layer, so it wins over Starlight's own layered rules. */
+.right-sidebar-panel .sl-container {
+	width: 10rem;
+	max-width: 10rem;
+}
+
+/* Inline icons in prose (e.g. a warning glyph next to a line of text).
+   Convention: give these images an alt text starting with "icon:" so they
+   stay on the text line instead of rendering at full image width. Height is
+   deliberately taller than the line so it overshoots above/below the text —
+   only width affects wrapping, so this is safe. */
+.sl-markdown-content img[alt^='icon:'] {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	margin: -0.3em 0.2em 0 0;
+}
+
+@media (min-width: 72rem) {
+	.right-sidebar-container {
+		width: 12rem;
+	}
+
+	[data-has-sidebar][data-has-toc] .main-pane {
+		width: calc(100% - 12rem);
+		/* Starlight's own rule right-aligns content here (auto 0) to visually
+		   balance against the original wider TOC gutter. Ours is narrower now,
+		   so center it instead. */
+		--sl-content-margin-inline: auto;
+	}
+}

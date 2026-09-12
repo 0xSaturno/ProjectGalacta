@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets';
+import { LinkButton } from '@astrojs/starlight/components';
+
+const { data } = Astro.locals.starlightRoute.entry;
+const { tagline, image, actions = [] } = data.hero || {};
+
+let heroImage: ImageMetadata | undefined;
+if (image && 'file' in image) heroImage = image.file;
+---
+
+<div class="hero">
+	{heroImage && <Image src={heroImage} alt={image?.alt || ''} width={480} loading="eager" decoding="async" />}
+	<div class="sl-flex stack">
+		{tagline && <div class="tagline" set:html={tagline} />}
+		{
+			actions.length > 0 && (
+				<div class="sl-flex actions">
+					{actions.map(
+						({ attrs: { class: className, ...attrs } = {}, icon, link: href, text, variant }) => (
+							<LinkButton {href} {variant} icon={icon?.name} class:list={[className]} {...attrs}>
+								{text}
+								{icon?.html && <Fragment set:html={icon.html} />}
+							</LinkButton>
+						)
+					)}
+				</div>
+			)
+		}
+	</div>
+</div>
+
+<style>
+	@layer starlight.core {
+		.hero {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: clamp(1.5rem, calc(1.5rem + 1vw), 2rem);
+			padding-block: clamp(2.5rem, calc(1rem + 10vmin), 6rem) 1rem;
+			text-align: center;
+		}
+
+		.hero > img {
+			width: min(100%, 32rem);
+			height: auto;
+		}
+
+		.stack {
+			flex-direction: column;
+			gap: clamp(1.5rem, calc(1.5rem + 1vw), 2rem);
+			align-items: center;
+		}
+
+		.tagline {
+			font-size: clamp(var(--sl-text-base), calc(0.0625rem + 2vw), var(--sl-text-xl));
+			color: var(--sl-color-gray-2);
+			max-width: 50ch;
+		}
+
+		.actions {
+			gap: 1rem 2rem;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+</style>

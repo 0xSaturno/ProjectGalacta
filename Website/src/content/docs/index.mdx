@@ -1,0 +1,45 @@
+---
+title: Project Galacta
+description: A mod loader, skin swapper, and companion app for Marvel Rivals.
+template: splash
+hero:
+  tagline: "A modding system for Marvel Rivals.<br>
+  In-game skin swapper, mod loader, and more..."
+  image:
+    file: ../../assets/hero-title.webp
+    alt: Project Galacta
+  actions:
+    - text: Get Started
+      link: /ProjectGalacta/docs/getting-started/
+      icon: right-arrow
+    - text: Download from NexusMods
+      link: https://www.nexusmods.com/marvelrivals/mods/12806
+      icon: download
+      variant: secondary
+    - text: Download from Github
+      link: https://github.com/0xSaturno/ProjectGalacta/releases
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What's included
+
+<CardGrid stagger>
+	<Card title="Mod Loader" icon="rocket">
+		Loads and manages mod packages at runtime.
+	</Card>
+	<Card title="Skin Swapper" icon="puzzle">
+		Swap character models without repacking the base game files.
+	</Card>
+	<Card title="Companion App" icon="setting">
+		Manages skin swapper database and compatible mod packages from a standalone desktop app.
+	</Card>
+</CardGrid>
+
+## Where to go next
+
+- New here? Start with [Getting Started](/ProjectGalacta/docs/getting-started/).
+- Want to know how it works under the hood? Read the [Architecture](/ProjectGalacta/technical/architecture/) breakdown.
+- Something not working? Check the [FAQ](/ProjectGalacta/faq/).
