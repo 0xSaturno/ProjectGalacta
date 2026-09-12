@@ -11,6 +11,16 @@ Project Galacta only changes visuals on your own client – it doesn't touch gam
 
 No. The swap only replaces the mesh of a skin you already own and have equipped – it can't point at a vanilla premium skin you don't own, that's blocked. See [Skin Swapping → Integrity concerns](../docs/skin-swapping/#integrity-concerns).
 
+### Manifest is missing
+
+A manifest only gets entries from Skin Swapper-compatible mods — regular skin mods don't produce any. If the Companion App scan comes up empty, either you don't have one installed, or the ones you have failed validation.
+
+Right now that also just means there aren't many compatible mods out yet – it's on modders to add Skin Swapper support to their skins first, so there's not much for the Companion App or Skin Swapper to pick up until they do.
+
+Also, scanning isn't writing: the manifest file itself only exists once you actually build/write it, not just after a scan. See [Companion App → Manifest tab](../docs/companion-app/#the-manifest-tab).
+
+None of this means your mods failed to load, or that the Companion App is broken – it's unrelated to both.
+
 ### Is it a virus?
 
 No. Only download it from the official [NexusMods](https://www.nexusmods.com/marvelrivals/mods/12806) or [GitHub Releases](https://github.com/0xSaturno/ProjectGalacta/releases) pages, never a reupload.
