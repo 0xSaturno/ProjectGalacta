@@ -21,6 +21,10 @@ Also, scanning isn't writing: the manifest file itself only exists once you actu
 
 None of this means your mods failed to load, or that the Companion App is broken – it's unrelated to both.
 
+### I'm a modder, how do I make my mod Skin Swapper-compatible?
+
+See [Skin Swapping → For modders](../docs/skin-swapping/#for-modders).
+
 ### Is it a virus?
 
 No. Only download it from the official [NexusMods](https://www.nexusmods.com/marvelrivals/mods/12806) or [GitHub Releases](https://github.com/0xSaturno/ProjectGalacta/releases) pages, never a reupload.
