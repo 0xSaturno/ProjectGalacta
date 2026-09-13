@@ -42,6 +42,14 @@ export default defineConfig({
 					label: 'FAQ',
 					slug: 'faq',
 				},
+				{
+					label: 'Known Issues',
+					slug: 'known-issues',
+				},
+				{
+					label: 'Future Plans',
+					slug: 'future-plans',
+				},
 			],
 		}),
 	],

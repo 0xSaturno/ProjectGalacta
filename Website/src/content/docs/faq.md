@@ -51,7 +51,7 @@ Developed and tested for 3 seasons now, never needed an update to survive a patc
 
 ### Can you add X feature to Project Galacta?
 
-Check [Architecture → Future plans](../technical/architecture/#future-plans) first – it might already be on the list.
+Check [Future Plans](../future-plans/) first – it might already be on the list.
 If not, suggest it in the project's thread on the MRM discord server.
 
 ### Do I need the Companion App for my mods to load?

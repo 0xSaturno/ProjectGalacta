@@ -37,13 +37,4 @@ Every manifest entry is validated before it's allowed to reach the game, both wh
 - **Game side:** Unreal Engine 5.3, built mostly in Blueprints. A small ASI bridge exists for the handful of cases Blueprints genuinely can't reach on their own, used as a class/object provider only – not publicly released yet.
 - **Companion App:** C# / .NET, Avalonia UI. Powered by [UAssetTool](https://github.com/XzantGaming/UassetToolRivals).
 
-## Future plans
-
-- **Accessories tab** – managing accessories from the mesh they originally shipped with, so they can attach to any bones instead of just vanilla default position.
-- **Settings tab** – in-menu configuration, details tbd.
-- **Mod preview portraits** – showing a preview image per mod in the Skins list, not just its name.
-- **Lobby support** – extending the Skin Swapper to work in lobby levels, not just matches and the practice range.
-- **Hero showcase camera controller** – letting players control the lobby's hero preview camera themselves.
-- and more...
-
-None of this is guaranteed to ship in this form, it's the current direction, not a promise.
+See [Future Plans](../../future-plans/) for what's coming next.

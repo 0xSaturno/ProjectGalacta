@@ -19,6 +19,12 @@
 	max-width: 10rem;
 }
 
+/* Narrower left nav sidebar too. Safe to change directly now — the right
+   panel above no longer reads this variable, it's fully hardcoded. */
+:root {
+	--sl-sidebar-width: 15rem;
+}
+
 /* Inline icons in prose (e.g. a warning glyph next to a line of text).
    Convention: give these images an alt text starting with "icon:" so they
    stay on the text line instead of rendering at full image width. Height is
@@ -30,6 +36,24 @@
 	height: 1.5em;
 	vertical-align: middle;
 	margin: -0.3em 0.2em 0 0;
+}
+
+/* Task lists (- [ ] / - [x]): drop the bullet, the checkbox already marks the item.
+   Keep the usual 40px indent regular lists get, just without the bullet glyph. */
+.sl-markdown-content .contains-task-list {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.sl-markdown-content .task-list-item {
+	/* Space for the checkbox, pulled back out below — same trick a native
+	   ::marker uses, so wrapped lines hang-indent to the text, not the box. */
+	padding-inline-start: 1.4em;
+}
+
+.sl-markdown-content .task-list-item input[type='checkbox'] {
+	margin-inline-start: -1.4em;
+	margin-inline-end: 0.5em;
 }
 
 @media (min-width: 72rem) {
