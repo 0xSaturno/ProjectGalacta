@@ -11,9 +11,13 @@ The Skin Swapper lets you replace a character's equipped skin mesh with other me
 
 Project Galacta adds its own in-game overlay, the **Skin Swapper** menu, opened with **P**. Its **Skins** tab lists the installed mod skins available for your currently equipped skin – not the hero's own vanilla skins, which you still pick through the game's normal skin selection first. A **Default** entry is always listed too, to revert back to the vanilla mesh.
 
-> ![icon: exclamation](../../../assets/icons/exclamation.webp) `P` _is also the game's default voice chat menu bind. It's recommended to unbind or move that first to avoid a conflict._
+> ![icon: exclamation](../../../assets/icons/exclamation.webp) `P` _is also the game's default voice chat menu bind. It's recommended to unbind or move that first to avoid a conflict — or just rebind the Skin Swapper key instead, see below._
 
 For a mod to show up there, it has to ship a **Skin Config** asset – that's what the Companion App scans for when it builds the manifest from your installed mod packages. Mods without one won't be picked up.
+
+### Rebinding the menu key
+
+The Skin Swapper's menu key can be rebound from the game's own settings, in: **Settings → Others tab → Project Galacta section**.
 
 ## Swapping a skin
 
@@ -43,6 +47,10 @@ Start from the SkinConfig template (downloadable from both [NexusMods](https://w
 
 > ![icon: exclamation](../../../assets/icons/exclamation.webp) _Already have a "regular" mesh mod pointing at `/Content/Marvel/Characters/...`?_ 
 > _That same mesh can't be reused as-is. Copy your custom mesh into the Project Galacta folder like explain below and continue with the guide. You can keep shipping the original as a regular replacer for players not using the Skin Swapper, and ship the moved copy as a separate PG-compatible version._
+
+Package your custom mesh only — don't include an override for the vanilla mesh path in the same mod. Otherwise reverting to **Default** in the Skin Swapper still shows your custom mesh instead of the actual vanilla one.
+
+The same goes for materials. If your custom mesh's material instances still live inside the vanilla skin's own folder (instead of being duplicated into your own mod folder first), packaging your mod overrides that vanilla material path too — so even **Default** ends up rendering with your custom material, since the vanilla mesh points at that same, now-overridden path. Always duplicate materials into your own folder before editing them.
 
 0. Import the `GAL_ModSkinConfig` uasset in your UE project and place it under `/Content/Marvel/ProjectGalacta/Blueprints`, open it and compile the blueprint.
 1. Create an instance of it by creating a new <u>Data Asset</u> of class **GAL_ModSkinConfig**, rename it how you like, and fill in:
