@@ -52,7 +52,7 @@ Package your custom mesh only – don't include an override for the vanilla mesh
 
 The same goes for materials. If your custom mesh's material instances still live inside the vanilla skin's own folder (instead of being duplicated into your own mod folder first), packaging your mod overrides that vanilla material path too – so even **Default** ends up rendering with your custom material, since the vanilla mesh points at that same, now-overridden path. Always duplicate materials into your own folder before editing them.
 
-#### The steps to follow to make a Skin Swapper-compatible mesh mod:
+###### The steps to follow to make a Skin Swapper-compatible mesh mod:
 
 0. Import the `GAL_ModSkinConfig` uasset in your UE project and place it under `/Content/Marvel/ProjectGalacta/Blueprints`, open it and compile the blueprint.
 1. Create an instance of it by creating a new <u>Data Asset</u> of class **GAL_ModSkinConfig**, rename it how you like, and fill in:
