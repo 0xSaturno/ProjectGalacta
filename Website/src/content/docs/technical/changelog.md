@@ -4,6 +4,24 @@ description: Version history for Project Galacta
 ---
 
 
+### v1.3.0 – Oct 5, 2026
+
+**Skin Swapper**
+- Added support for heroes with multiple forms. Skin Swapper Mods can now ship a separate mesh for each form.
+- Pick a skin once on the hero's base form and the matching meshes are applied automatically whenever you change form. A form the mod has no mesh for shows the vanilla one.
+- The Skins tab now lists the skins made for the form you are currently in, and your choice is remembered per form.
+- Added a **Settings** tab with a "Forms follow the base skin" option, to turn the automatic form matching on or off.
+- Reworked how the Skin Swapper tracks your hero, fixing wrong or missed targets on heroes with several bodies or clones, and fixed the lag spikes when changing form.
+- Restyled the tab bar to match the game's own UI.
+
+**Companion App**
+- Reads the new form setting from Skin Configs and writes it to the manifest. The Manifest tables show a new **Form** column.
+- Manifests written by older versions keep working and load as the base form.
+
+**For modders**
+- The SkinConfig template has a new `TargetSculptID` property. Leave it at `0` for regular skins; set it to target a specific form. Put one mesh and one config per form in the same mod folder to ship them as one skin. See [Skin Swapping → For modders](../../docs/skin-swapping/#heroes-with-multiple-forms-1).
+- Existing base form Skin Configs need no changes.
+
 ### v1.2.2 – Sep 18, 2026
 
 **Mod Loader**
