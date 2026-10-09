@@ -50,7 +50,7 @@ Any skin already unlocked on your account can be modded – including each hero'
 
 ## For modders
 
-To make a skin mod Project Galacta-compatible, it needs a **`GAL_ModSkinConfig`** DataAsset alongside your mesh, that's what the Companion App reads to build the manifest.
+To make a skin mod Skin Swapper-compatible, it needs a **`GAL_ModSkinConfig`** DataAsset alongside your mesh, that's what the Companion App reads to build the manifest.
 Start from the SkinConfig template (downloadable from both [NexusMods](https://www.nexusmods.com/marvelrivals/mods/12806) and [GitHub Releases](https://github.com/0xSaturno/ProjectGalacta/releases)); direct instances of the template are required, subclassing isn't supported.
 
 > ![icon: exclamation](../../../assets/icons/exclamation.webp) _Already have a "regular" mesh mod pointing at `/Content/Marvel/Characters/...`?_ 

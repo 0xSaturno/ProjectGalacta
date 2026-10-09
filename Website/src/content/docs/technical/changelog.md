@@ -4,6 +4,17 @@ description: Version history for Project Galacta
 ---
 
 
+### v1.4.0 – Oct 9, 2026
+
+**Skin Swapper**
+- Reworked the **Materials** tab: hidden parts now stay hidden through respawns, ability material changes, skin swaps and form changes, and are saved per mesh across level changes and restarts.
+- Parts hidden by the game itself now show as unticked, and opening the tab no longer re-shows everything.
+
+**Companion App**
+- Added a **Convert** tab: turns a mod that replaces a vanilla skin into a Skin Swapper compatible one. Pick a mod from your mods folder (or **Add from file…**), fill the options, and it writes the converted mod to a `GalactaConverted` subfolder. Can update `skins.txt` automatically afterwards.
+- The hero list is now read from the game, so new heroes and their names show up without an app update.
+- Added a switch on each skin in the Heroes tab to leave it out of `skins.txt` without uninstalling their mods.
+
 ### v1.3.0 – Oct 5, 2026
 
 **Skin Swapper**
