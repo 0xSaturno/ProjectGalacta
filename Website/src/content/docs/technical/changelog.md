@@ -4,6 +4,11 @@ description: Version history for Project Galacta
 ---
 
 
+### v1.4.1 – Oct 14, 2026
+
+**Mod Loader**
+- Mods that add custom VFX to abilities are no longer blocked.
+
 ### v1.4.0 – Oct 9, 2026
 
 **Skin Swapper**
