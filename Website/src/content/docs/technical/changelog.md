@@ -4,6 +4,14 @@ description: Version history for Project Galacta
 ---
 
 
+### v1.4.2 – Oct 15, 2026
+
+**Mod Loader**
+- Safety patches: synced with what NetEase's anti-cheat enforces (environment mods are now blocked).
+
+**Companion App**
+- Fixed the Convert tab stripping encryption from encrypted mods.
+
 ### v1.4.1 – Oct 14, 2026
 
 **Mod Loader**
