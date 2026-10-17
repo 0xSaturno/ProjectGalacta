@@ -10,7 +10,7 @@ description: Version history for Project Galacta
 - Safety patches: synced with what NetEase's anti-cheat enforces (environment mods are now blocked).
 
 **Companion App**
-- Fixed the Convert tab stripping encryption from encrypted mods.
+- Converting an encrypted mod into a Skin Swapper-compatible one no longer strips its encryption.
 
 ### v1.4.1 – Oct 14, 2026
 
