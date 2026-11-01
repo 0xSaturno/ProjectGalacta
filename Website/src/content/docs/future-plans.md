@@ -9,7 +9,7 @@ description: What's planned next for Project Galacta
 
 ### Skin Swapper
 
-- [ ] **Accessories tab** – managing accessories from the mesh they originally shipped with, so they can attach to any bones instead of just vanilla default position.
+- [X] **Accessories tab** – managing accessories from the mesh they originally shipped with, so they can attach to any bones instead of just vanilla default position.
 - [ ] **Settings tab** – in-menu configuration, details tbd.
 - [ ] **Mod preview portraits** – showing a custom preview image per mod in the Skins list, not just its name. To be shipped from the mod author.
 - [ ] **Lobby support** – extending the Skin Swapper to work in lobby levels, not just matches and the practice range.

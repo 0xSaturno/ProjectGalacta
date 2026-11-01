@@ -30,6 +30,8 @@ Both are blocked because they're considered cheating under the game's own [Fair 
 
 Mods are mounted automatically after login, but you don't need to restart the game to toggle them off or change your mod selection. Press **F7** at any time to unmount or remount, then trigger a level change (enter/exit a match or the Practice Range) for it to actually take effect.
 
+F7 is the default key. You can change it in the game's settings: **Settings → Others tab → Project Galacta section → Mod Toggle Key**.
+
 **Just want mods off/back on:**
 1. F7 to unmount.
 2. Switch level to apply.

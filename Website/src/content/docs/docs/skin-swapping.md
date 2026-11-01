@@ -37,8 +37,21 @@ You can still mix: pick a different skin while you are in a form and it applies 
 ## Other tabs
 
 - **Morphs** – tweak the shape keys shipped with the currently swapped mesh using sliders.
+- **Accessory** – move your equipped hero accessory to another spot on the body, see below.
 - **Materials** – show or hide each material slot on the currently swapped mesh.
-- **Accessories** and **Settings** – coming soon.
+- **Settings** – the "Forms follow the base skin" option for heroes with multiple forms.
+
+### Accessory
+
+The **Accessory** tab lets you move any equipped hero accessory to a different body part:
+
+1. Click a point on the skeleton – **Head**, **Back**, **Belt**, or a **Shoulder**, **Elbow**, **Wrist**, **Belt** side, **Knee** or **Ankle** on either side – and the accessory jumps there. The skeleton is drawn from behind, like the game camera, so its left side is your hero's left.
+2. Fine-tune it with the **Offset X/Y/Z**, **Pitch/Yaw/Roll** and **Scale** rows. Drag a slider to see the change live, release it (or type a value) to keep it.
+3. **Reset** puts the accessory back where the game places it.
+
+A greyed-out point means the current mesh has no bone there, so it can't be used.
+
+Your placement is saved per mesh and per accessory, and stays through respawns, level changes and restarts. It works on any skin, vanilla included, and like the rest of the Skin Swapper only visible to you.
 
 ## Supported characters / skins
 
@@ -47,6 +60,7 @@ Any skin already unlocked on your account can be modded – including each hero'
 ## Integrity concerns
 
 - Mesh Swapper runs robust security checks. It does **not** let you preview or unlock skins you haven't purchased. The swap only replaces the mesh of a skin you already own and have equipped – it can't point at a vanilla premium skin you don't own, that's explicitly blocked.
+- The Accessory tab only moves an accessory you own and have equipped. It can't equip, preview or unlock one you don't own.
 
 ## For modders
 

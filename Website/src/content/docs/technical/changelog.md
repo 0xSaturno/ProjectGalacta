@@ -4,6 +4,30 @@ description: Version history for Project Galacta
 ---
 
 
+### Unreleased
+
+**Skin VFX**
+- New: mods can attach Niagara effects to a hero's bones while a skin is worn. Open the VFX panel with **F9** to toggle each effect, your choices are saved. See [Skin VFX](../../docs/skin-vfx/).
+
+**Companion App**
+- Added a **VFX** tab: turns a setup exported from the VFX Lab addon into a mod, no Unreal Engine needed.
+- Scans VFX mods, shows them in the Heroes tab and writes `vfx.galacta` alongside the skin manifest.
+
+**For modders**
+- New **VFX Lab** addon (**F10**): spawn any game effect on your hero live, place it on a bone and export the setup. See [Skin VFX → For modders](../../docs/skin-vfx/#for-modders).
+
+### v1.5.0 – Oct 24, 2026
+
+Thank you for 1,000+ endorsements and 100,000+ downloads! This update brings a full visual overhaul and new features to the Skin Swapper menu.
+
+**Skin Swapper**
+- New **Accessory** tab: move your equipped hero accessory to another spot on the body. Pick one of 15 points on the skeleton (head, back, belt and both belt sides, shoulders, elbows, wrists, knees, ankles), fine-tune its position, rotation and scale, or reset it to the game's placement. Saved per mesh.
+- Full UI restyle: a new framed window, slanted tabs, and game-style scrollbars, sliders, checkboxes and buttons, with bigger rows and text, plus toggleable VFX particles.
+- **Morphs** tab: each morph now has a value box where you can type an exact value (even above 1 or below 0) or drag to adjust it, and long morph names scroll when you hover them.
+
+**Mod Loader**
+- The mod unmount/remount key can now be rebound: **Settings → Others tab → Project Galacta section → Mod Toggle Key** (default F7).
+
 ### v1.4.2 – Oct 15, 2026
 
 **Mod Loader**
