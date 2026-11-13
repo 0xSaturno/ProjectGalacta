@@ -3,18 +3,10 @@ title: Changelog
 description: Version history for Project Galacta
 ---
 
+### v1.5.1 – Nov 13, 2026
 
-### Unreleased
-
-**Skin VFX**
-- New: mods can attach Niagara effects to a hero's bones while a skin is worn. Open the VFX panel with **F9** to toggle each effect, your choices are saved. See [Skin VFX](../../docs/skin-vfx/).
-
-**Companion App**
-- Added a **VFX** tab: turns a setup exported from the VFX Lab addon into a mod, no Unreal Engine needed.
-- Scans VFX mods, shows them in the Heroes tab and writes `vfx.galacta` alongside the skin manifest.
-
-**For modders**
-- New **VFX Lab** addon (**F10**): spawn any game effect on your hero live, place it on a bone and export the setup. See [Skin VFX → For modders](../../docs/skin-vfx/#for-modders).
+- Fixed a crash on startup after the Season 11 update.
+- Mod Loader synced with the new Season 11 anti-cheat integrity check: mods that fail it are no longer loaded.
 
 ### v1.5.0 – Oct 24, 2026
 
