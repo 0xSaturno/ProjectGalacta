@@ -3,6 +3,11 @@ title: Changelog
 description: Version history for Project Galacta
 ---
 
+### v1.5.2 – Nov 15, 2026
+
+**Mod Loader**
+- Refined the integrity check: cosmetic mods with harmless packaging differences now load, while mods that hide their contents stay blocked.
+
 ### v1.5.1 – Nov 13, 2026
 
 - Fixed a crash on startup after the Season 11 update.
