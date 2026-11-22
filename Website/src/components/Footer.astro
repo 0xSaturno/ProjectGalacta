@@ -1,0 +1,15 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default {...Astro.props}><slot /></Default>
+<p class="pg-legal">© 2026 PROJECT GALACTA. Not affiliated with Marvel or NetEase Games.</p>
+
+<style>
+	.pg-legal {
+		margin-top: 1rem;
+		text-align: center;
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+	}
+</style>
