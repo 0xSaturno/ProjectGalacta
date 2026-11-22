@@ -69,3 +69,10 @@
 		--sl-content-margin-inline: auto;
 	}
 }
+
+/* "What's included" cards: Starlight cycles accent colours per card
+   (orange/purple/green/red/blue). Pin every card to the first one's orange. */
+.sl-markdown-content .card-grid > .card:nth-child(n) {
+	--sl-card-border: var(--sl-color-orange);
+	--sl-card-bg: var(--sl-color-orange-low);
+}
