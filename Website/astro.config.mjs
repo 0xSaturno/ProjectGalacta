@@ -4,8 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://0xsaturno.github.io',
-	base: '/ProjectGalacta',
+	site: 'https://projectgalacta.dev',
 	integrations: [
 		starlight({
 			title: 'PROJECT GALACTA',
