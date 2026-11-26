@@ -28,6 +28,7 @@ export default defineConfig({
 						{ label: 'Getting Started', slug: 'docs/getting-started' },
 						{ label: 'Mod Loader', slug: 'docs/mod-loader' },
 						{ label: 'Skin Swapping', slug: 'docs/skin-swapping' },
+						{ label: 'Skin VFX', slug: 'docs/skin-vfx' },
 						{ label: 'Companion App', slug: 'docs/companion-app' },
 					],
 				},

@@ -29,7 +29,7 @@ No game files are modified on disk; mods are mounted at runtime after login.
 
 ## Documentation
 
-For in-depth guides, technical breakdowns, and FAQ, see the [Project Galacta website](https://0xsaturno.github.io/ProjectGalacta/).
+For in-depth guides, technical breakdowns, and FAQ, see the [Project Galacta website](https://projectgalacta.dev/).
 
 ## Safety & Fair Use
 
@@ -49,6 +49,6 @@ For in-depth guides, technical breakdowns, and FAQ, see the [Project Galacta web
 
 > This repository contains documentation only. No source code or game assets are published here.
 
-<sub>All Marvel Rivals game assets used in this project are property of Marvel and NetEase. This project is not affiliated with Marvel or NetEase in any way and is not used for profit.</sub>
+<sub>All Marvel Rivals game assets used in this project are property of Marvel and NetEase Games. This project is not affiliated with Marvel or NetEase Games in any way and is not used for profit.</sub>
 
 

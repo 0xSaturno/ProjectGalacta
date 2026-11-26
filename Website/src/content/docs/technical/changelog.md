@@ -3,6 +3,49 @@ title: Changelog
 description: Version history for Project Galacta
 ---
 
+### v1.6.0 – Nov 26, 2026
+
+**Skin VFX (new mod type)**
+- Mods can now attach Niagara effects to a hero's bones while a skin is worn: auras on the back, sparks on the back, and so on. Like the Skin Swapper, only you see them.
+- New **Skin VFX** panel: each mod for the skin you have on is listed with an on-count bar and its own box, and the selected mod's effects can be toggled one by one. Your choices are saved per skin.
+- A master **Skin VFX** switch pauses every effect without losing your selection.
+- See [Skin VFX](../../docs/skin-vfx/).
+
+**Wheel menu**
+- New Project Galacta wheel, a quick menu styled like the game's communication wheel. Hold the **Galacta Wheel Key** (default **P**), move the mouse toward a slot and release to open it. Release in the middle to cancel.
+  - Slots: **Skin Swapper**, **Skin VFX** and, with the addon installed, **VFX Lab**.
+  - The wheel replaces the Skin Swapper key: the old key setting is now **Galacta Wheel Key** in **Settings → Others tab → Project Galacta section**.
+  - Optional **Toggle Mods** slot that unloads and reloads your mods, like the Mod Toggle Key. Off by default: **Settings → Others tab → Project Galacta section → Wheel Mod Toggle**.
+
+**For modders**
+- New **VFX Lab** addon: spawn any game effect on your hero live, place it on a bone with offset, rotation, scale and loop controls, and export the setup.
+  - **Practice Range camera:** orbit around the selected bone, zoom with the mouse wheel, or snap to preset views.
+  - **Bone search:** filter the bone list by name.
+  - **Duplicate:** copy an entry with all its settings.
+- Exported setups become mods in the Companion App's new **Skin VFX** tab, with no Unreal Engine needed. See [Skin VFX → For modders](../../docs/skin-vfx/#for-modders).
+
+**Mod Loader**
+- Added support for Repak X's **Galacta Mode** (Repak X v2.4.0): while the game runs, only the mods it has loaded stay locked in Repak X.
+- Reloading mods with the Mod Toggle Key now picks up mods you renamed, enabled or disabled while they were unloaded.
+
+**Skeleton Relay (new)**
+- Other players using a custom-skeleton skin mod now play their abilities, attacks and emotes on your screen instead of only walking and running, in matches and replays. Works for every such mod.
+- Off by default: **Settings → Others tab → Project Galacta section → Skeleton Relay**.
+- For those mods' hair and cloth physics too, set the game's **Model Detail** to **Ultra**.
+
+**Skin Swapper**
+- Skins reapply faster after form switches and respawns.
+- New experimental **Auto-apply saved skins** option (**Settings** tab): applies your saved skin when you pick a hero, no menu open needed. Off by default.
+
+**Replays**
+- Project Galacta's features keep working after you skip or rewind in a replay (Skin Swapper still not supported here).
+
+**Companion App**
+- New **VFX** tab: build a Skin VFX mod from a VFX Lab export. VFX mods show under their hero and get their own tables on the Manifest tab.
+- Now available as a native **Linux** app.
+- Converted mods now link the game materials they copy, so they no longer break when a game update changes those materials. A one-time **Fix your converted mods** dialog repairs converted mods you already installed; run it again any time from **Settings → Scan for broken materials**.
+- New **Storage** section in Settings: lists the files the app keeps (material patch backups, older mappings, hero assets and scan caches), and lets you delete them.
+
 ### v1.5.2 – Nov 15, 2026
 
 **Mod Loader**
